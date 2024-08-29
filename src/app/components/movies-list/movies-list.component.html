@@ -1,0 +1,72 @@
+<section id="search">
+  <h3>Welcome to Our Fantastic Movies App</h3>
+  <p class="global-paragraph">
+    wanna enjoy a special movie ? you have its name in mind don't worry you
+    can find it easily , try to enter the name in the box bellow
+  </p>
+  <form class="search">
+    <input
+      type="search"
+      [(ngModel)]="searchTitle"
+      name="searchTitle"
+      placeholder="Enter a movie name"
+      class="input"
+      id="searchTitle"
+      value="Search"
+      (keyup)="getAllMoviesPagination()"
+    />
+
+    <!-- <button
+      type="button"
+      class="btn btn-primary mb-2"
+      (click)="getAllMoviesPagination()"
+    >
+      Search
+    </button> -->
+  </form>
+</section>
+<section id="main">
+  <div
+    class="card"
+    *ngFor="
+      let movie of movies
+        | paginate
+          : { itemsPerPage: pageSize, currentPage: page, totalItems: count }
+    "
+    style="width: 18rem"
+  >
+    <img
+      class="card-img-top"
+      src="{{ movie.cover?.link }}"
+      alt="Card image cap"
+    />
+
+    <div class="card-body">
+      <h4 class="card-title">{{ movie.title }}</h4>
+      <h6 class="card-subtitle mb-2 text-muted">
+        Director : {{ movie.director?.name }}
+      </h6>
+      <p class="card-text description">{{ movie.description }}</p>
+
+      <div class="actionBtns">
+        <a routerLink="/movie-details/{{ movie.id }}" class="card-link"
+          >Details</a
+        >
+        <!-- <a href="#" (click)="delete(movie.id)" class="card-link">Delete</a> -->
+
+        <a class="delete_btn" type="button" (click)="confirmBox(movie.id)">
+          Delete
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="footer">
+  <pagination-controls
+    (pageChange)="pageChanged($event)"
+    [responsive]="true"
+    previousLabel="Previous"
+    nextLabel="Next"
+  >
+  </pagination-controls>
+</section>

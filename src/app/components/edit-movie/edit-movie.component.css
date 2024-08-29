@@ -1,0 +1,23 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+h3{
+    color: #e2c803;
+}
+
+.container{
+    margin-bottom: 50px;
+}
+
+input,textarea{
+    margin-bottom: 8px;
+}
+
+button{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+

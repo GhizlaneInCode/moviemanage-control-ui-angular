@@ -1,0 +1,65 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+h3{
+    color: #e2c803;
+    
+}
+
+.container{
+    width: 100%;
+    border: 1px solid #e2c803;
+    border-radius: 10px;
+    background-color: #242425 ;
+    padding: 10px 50px;
+    margin-top: 10%;
+
+    
+}
+
+form{
+    /* margin-bottom: 30px; */
+  margin-top: 20px;
+   
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+
+input,textarea{
+    margin-bottom: 8px;
+}
+
+button{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.img-circular{
+    width: 200px;
+    height: 200px;
+    background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');
+    background-size: cover;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+   }
+
+.modal{
+    margin-top: 5%;
+}

@@ -1,0 +1,115 @@
+section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+#main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color: #111112;
+    width: 100%;
+}
+
+
+
+
+.card-img-top {
+    padding: 15px;
+    width: 100%;
+    aspect-ratio: 1/1; /* Define aspect ratio (e.g., 2:3) */
+    object-fit: cover; /* Ensure the image covers the container */
+
+}
+
+
+.description{
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+}
+
+.actionBtns {
+    display: flex;
+    gap: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #e2c803;
+    font-weight: 500;
+    border: 1px solid #e2c803;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: #e2c803;
+    color: #111112;
+    font-weight: 600;
+}
+
+.card-text {
+    color: white;
+}
+
+
+.card-title {
+    color: rgb(84, 124, 217);
+}
+
+
+.description{
+    overflow-wrap: break-word;
+}
+h3,
+.global-paragraph {
+    text-align: center;
+
+}
+
+h3 {
+    color: #e2c803;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.input {
+    padding: 15px;
+    width: 450px;
+    height: 40px;
+    background: none;
+    border: 2px solid #e2c803;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    outline: none;
+    transition: .5s;
+}
+
+.input:hover {
+    width: 500px;
+    background: #272133;
+}
+
+
+.btn {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#footer {
+    text-align: center;
+
+}
